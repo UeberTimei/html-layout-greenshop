@@ -1,0 +1,93 @@
+.header {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.header .wrapper .header-wrapper {
+  max-width: 1200px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 240px;
+  position: relative;
+}
+.header .wrapper .header-wrapper .header-line {
+  position: absolute;
+  width: 1200px;
+  height: 0.3px;
+  background: rgba(70, 163, 88, 0.5);
+  bottom: -25px;
+}
+.header .wrapper .header-wrapper > * {
+  display: flex;
+  flex-direction: row;
+}
+.header .wrapper .header-wrapper .header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+.header .wrapper .header-wrapper .header-nav > .header-nav-el > .header-nav-el-text {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .wrapper .header-wrapper .header-nav > .header-nav-el > .header-nav-selection-line {
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  bottom: -25px;
+  background: #46a358;
+}
+.header .wrapper .header-wrapper .header-tools {
+  margin-left: 32px;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-cart-thumb {
+  position: relative;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-cart-thumb .header-tools-cart-thumb-notice-thumb {
+  position: absolute;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-cart-thumb .header-tools-cart-thumb-notice-thumb .notitia-num {
+  position: absolute;
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-login {
+  margin-left: 5px;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-login .header-tools-login-button {
+  border-radius: 6px;
+  background: #46a358;
+  border: 0;
+  padding: 8px 17px;
+}
+.header .wrapper .header-wrapper .header-tools .header-tools-login .header-tools-login-button .header-tools-login-button-text {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
