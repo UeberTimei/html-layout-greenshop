@@ -2,6 +2,7 @@
   margin-top: 8px;
   display: flex;
   align-items: center;
+  padding-bottom: 80px;
 }
 .header .wrapper .header-wrapper {
   max-width: 1200px;
@@ -18,7 +19,7 @@
   width: 1200px;
   height: 0.3px;
   background: rgba(70, 163, 88, 0.5);
-  bottom: -25px;
+  bottom: -15px;
 }
 .header .wrapper .header-wrapper > * {
   display: flex;

@@ -1,3 +1,87 @@
-.articles .articles-wrapper {
+.articles .wrapper {
   max-width: 1200px;
+}
+.articles .wrapper .articles-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.articles .wrapper .articles-wrapper .article-card {
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  min-width: 620px;
+  max-height: 250px;
+  padding: 35px 48px;
+  position: relative;
+  margin-bottom: 138px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-img {
+  position: relative;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-img .article-card-thumb {
+  left: -45px;
+  top: -100px;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-img .article-card-thumb:first-child {
+  top: -90px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info {
+  gap: 15px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-title {
+  max-width: 140px;
+  text-align: end;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-title .article-card-info-title-text {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-description {
+  max-width: 300px;
+  text-align: end;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-description .article-card-info-description-text {
+  color: #727272;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-button {
+  margin-top: 1rem;
+  align-self: flex-end;
+  border: none;
+  border-radius: 6px;
+  background: #46a358;
+  padding: 11px 26px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-button:hover {
+  background: #398b4a;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-info .article-card-info-button .article-card-info-button-text {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.articles .wrapper .articles-wrapper .article-card .article-card-circles-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

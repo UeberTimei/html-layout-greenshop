@@ -1,7 +1,10 @@
+@import "../mixins.scss";
+
 .header {
   margin-top: 8px;
   display: flex;
   align-items: center;
+  padding-bottom: 80px;
   .wrapper {
     .header-wrapper {
       max-width: 1200px;
@@ -18,7 +21,7 @@
         height: 0.3px;
         background: rgba(70, 163, 88, 0.5);
 
-        bottom: -25px;
+        bottom: -15px;
       }
       & > * {
         display: flex;
@@ -33,12 +36,7 @@
         position: relative;
 
         & > .header-nav-el > .header-nav-el-text {
-          color: #3d3d3d;
-          font-family: PT Sans;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+          @include typography(#3d3d3d, 16px, 400, normal);
         }
         & > .header-nav-el > .header-nav-selection-line {
           position: absolute;
@@ -65,12 +63,7 @@
             align-items: center;
             .notitia-num {
               position: absolute;
-              color: #fff;
-              font-family: PT Sans;
-              font-size: 10px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
+              @include typography(#fff, 10px, 500, normal);
             }
           }
         }
@@ -82,12 +75,7 @@
             border: 0;
             padding: 8px 17px;
             .header-tools-login-button-text {
-              color: #fff;
-              font-family: PT Sans;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
+              @include typography(#fff, 16px, 500, normal);
             }
           }
         }

@@ -1,0 +1,15 @@
+@mixin typography($color, $size, $weight, $height) {
+  color: $color;
+  font-family: PT Sans;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin flex_center($direction, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: $align;
+}

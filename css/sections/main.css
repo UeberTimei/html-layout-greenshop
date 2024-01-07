@@ -1,3 +1,45 @@
 .main .main-wrapper {
   max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.main .main-wrapper .main-selector {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+.main .main-wrapper .main-selector .main-selector-select {
+  display: flex;
+  flex-direction: column;
+}
+.main .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-wrapper .main-plants .main-plants-goods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.main .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 258px;
+}
+.main .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.main .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc-price {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
 }

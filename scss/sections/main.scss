@@ -1,11 +1,4 @@
-@mixin typography($color, $size, $weight, $height) {
-  color: $color;
-  font-family: Cera Pro;
-  font-size: $size;
-  font-style: normal;
-  font-weight: $weight;
-  line-height: $height;
-}
+@import "../mixins.scss";
 
 .main {
   .main-wrapper {

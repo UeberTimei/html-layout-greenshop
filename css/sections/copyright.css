@@ -1,0 +1,16 @@
+.copyright .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 13px 0;
+}
+.copyright .wrapper .copyright-text {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}

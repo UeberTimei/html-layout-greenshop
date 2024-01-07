@@ -1,3 +1,102 @@
-.blog-posts .blog-posts-wrapper {
+.blog-posts .wrapper {
   max-width: 1200px;
+}
+.blog-posts .wrapper .blog-posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-text {
+  gap: 15px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-text .blog-posts-text-title .blog-posts-text-title-text {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-text .blog-posts-text-description .blog-posts-text-description-text {
+  color: #727272;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 363px;
+  max-width: 268px;
+  background-color: #fbfbfb;
+  padding-bottom: 13px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card:nth-child(3) .blog-posts-posts-card-text .blog-posts-posts-card-text-readmore {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card .blog-posts-posts-card-text {
+  margin-top: 9px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card .blog-posts-posts-card-text .blog-posts-posts-card-text-reading {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card .blog-posts-posts-card-text .blog-posts-posts-card-text-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  max-width: 189px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card .blog-posts-posts-card-text .blog-posts-posts-card-text-description {
+  color: #727272;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 230px;
+  margin-bottom: 5px;
+}
+.blog-posts .wrapper .blog-posts-wrapper .blog-posts-posts .blog-posts-posts-card .blog-posts-posts-card-text .blog-posts-posts-card-text-readmore {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px;
 }

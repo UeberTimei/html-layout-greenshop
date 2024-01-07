@@ -1,0 +1,13 @@
+@import "../mixins.scss";
+
+.copyright {
+  .wrapper {
+    @include flex_center(column, center);
+
+    max-width: 1200px;
+    padding: 13px 0;
+    .copyright-text {
+      @include typography(#3d3d3d, 14px, 400, 30px);
+    }
+  }
+}

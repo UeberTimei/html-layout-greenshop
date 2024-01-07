@@ -1,5 +1,70 @@
+@import "../mixins.scss";
+
 .blog-posts {
-  .blog-posts-wrapper {
+  .wrapper {
     max-width: 1200px;
+    .blog-posts-wrapper {
+      @include flex_center(column, center);
+      margin-bottom: 100px;
+
+      .blog-posts-text {
+        gap: 15px;
+        margin-bottom: 35px;
+
+        @include flex_center(column, center);
+
+        .blog-posts-text-title {
+          .blog-posts-text-title-text {
+            @include typography(#3d3d3d, 30px, 700, 16px);
+          }
+        }
+        .blog-posts-text-description {
+          .blog-posts-text-description-text {
+            @include typography(#727272, 14px, 400, 24px);
+          }
+        }
+      }
+
+      .blog-posts-posts {
+        @include flex_center(row, center);
+        gap: 44px;
+        .blog-posts-posts-card {
+          @include flex_center(column, center);
+
+          max-height: 363px;
+          max-width: 268px;
+          background-color: #fbfbfb;
+          padding-bottom: 13px;
+
+          &:nth-child(3) {
+            .blog-posts-posts-card-text {
+              .blog-posts-posts-card-text-readmore {
+                @include typography(#46a358, 14px, bold, 16px);
+              }
+            }
+          }
+          .blog-posts-posts-card-text {
+            margin-top: 9px;
+            gap: 4px;
+            @include flex_center(column, start);
+            .blog-posts-posts-card-text-reading {
+              @include typography(#46a358, 14px, 500, 16px);
+            }
+            .blog-posts-posts-card-text-title {
+              @include typography(#3d3d3d, 20px, 700, 26px);
+              max-width: 189px;
+            }
+            .blog-posts-posts-card-text-description {
+              @include typography(#727272, 14px, 400, 22px);
+              max-width: 230px;
+              margin-bottom: 5px;
+            }
+            .blog-posts-posts-card-text-readmore {
+              @include typography(#3d3d3d, 14px, bold, 16px);
+            }
+          }
+        }
+      }
+    }
   }
 }

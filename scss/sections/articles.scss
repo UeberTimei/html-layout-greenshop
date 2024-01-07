@@ -1,5 +1,70 @@
+@import "../mixins.scss";
+
 .articles {
-  .articles-wrapper {
+  .wrapper {
     max-width: 1200px;
+    .articles-wrapper {
+      @include flex_center(row, center);
+      gap: 28px;
+      .article-card {
+        background-color: #fbfbfb;
+        box-sizing: border-box;
+        min-width: 620px;
+        max-height: 250px;
+        padding: 35px 48px;
+        position: relative;
+        margin-bottom: 138px;
+        .article-card-img {
+          position: relative;
+          .article-card-thumb {
+            left: -45px;
+            top: -100px;
+            position: absolute;
+            mix-blend-mode: multiply;
+            &:first-child {
+              top: -90px;
+            }
+          }
+        }
+        .article-card-info {
+          gap: 15px;
+          padding: 0 5px;
+          @include flex_center(column, end);
+          .article-card-info-title {
+            max-width: 140px;
+            text-align: end;
+            .article-card-info-title-text {
+              @include typography(#3d3d3d, 20px, 700, 26px);
+            }
+          }
+          .article-card-info-description {
+            max-width: 300px;
+            text-align: end;
+            .article-card-info-description-text {
+              @include typography(#727272, 14px, 400, 22px);
+            }
+          }
+          .article-card-info-button {
+            margin-top: 1rem;
+            align-self: flex-end;
+            border: none;
+            border-radius: 6px;
+            background: #46a358;
+            padding: 11px 26px;
+            &:hover {
+              background: #398b4a;
+            }
+            .article-card-info-button-text {
+              @include typography(#fff, 16px, 400, 20px);
+            }
+          }
+        }
+        .article-card-circles-img {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
   }
 }
