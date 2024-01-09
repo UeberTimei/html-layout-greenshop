@@ -1,5 +1,189 @@
+@import "../mixins.scss";
+
 .footer {
-  .footer-wrapper {
+  .wrapper {
     max-width: 1200px;
+    .footer-wrapper {
+      @include flex_center(column, center);
+
+      .footer-info {
+        @include flex_center(row, center);
+
+        padding: 23px;
+        gap: 62px;
+
+        .footer-info-card {
+          @include flex_center(column, start);
+
+          .footer-info-card-title {
+            @include typography(#3d3d3d, 18px, 700, 16px);
+          }
+          .footer-info-card-description {
+            @include typography(#727272, 14px, 400, 22px);
+          }
+        }
+
+        .footer-info-line {
+          width: 1px;
+          height: 187px;
+          background: rgba(70, 163, 88, 0.1);
+        }
+
+        .footer-info-news {
+          @include flex_center(column, start);
+
+          gap: 18px;
+          .footer-info-news-title {
+            @include typography(#3d3d3d, 18px, 700, 16px);
+          }
+          .footer-info-news-subscribe {
+            position: relative;
+            .footer-info-news-subscribe-input {
+              min-width: 354px;
+              border: 0;
+              border-radius: 6px;
+              background: #fff;
+              box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+              padding: 11px;
+              &::placeholder {
+                @include typography(#acacac, 14px, 400, 16px);
+              }
+            }
+            .footer-info-news-subscribe-button {
+              position: absolute;
+              right: 0;
+              top: 0;
+              border-radius: 0px 6px 6px 0px;
+              background: #46a358;
+              &:hover {
+                background: #3d924e;
+              }
+              padding: 12px 26px;
+              border: 0;
+
+              @include typography(#fff, 18px, 700, 16px);
+            }
+          }
+          .footer-info-news-description {
+            @include typography(#727272, 14px, 400, 22px);
+          }
+        }
+      }
+
+      .footer-contacts {
+        width: 1200px;
+        @include flex_center(row, center);
+        justify-content: start;
+        background: rgba(70, 163, 88, 0.1);
+        padding: 27px 23px;
+        gap: 90px;
+
+        .footer-contacts-adress {
+          @include flex_center(row, center);
+
+          gap: 9px;
+          max-width: 185px;
+          .footer-contacts-adress-text {
+            @include typography(#3d3d3d, 14px, 400, 22px);
+          }
+        }
+
+        .footer-contacts-email {
+          @include flex_center(row, center);
+
+          gap: 9px;
+          max-width: 185px;
+          .footer-contacts-email-text {
+            @include typography(#3d3d3d, 14px, 400, 22px);
+          }
+        }
+
+        .footer-contacts-number {
+          @include flex_center(row, center);
+
+          gap: 9px;
+          max-width: 185px;
+          .footer-contacts-number-text {
+            @include typography(#3d3d3d, 14px, 400, 22px);
+          }
+        }
+      }
+
+      .footer-help {
+        @include flex_center(row, center);
+
+        width: 1200px;
+        gap: 164px;
+        padding: 33px 23px;
+        background-color: #fbfbfb;
+        .footer-help-list {
+          .footer-help-list-account {
+            .footer-help-list-account-title {
+              margin-bottom: 8px;
+              @include typography(#3d3d3d, 18px, 700, 16px);
+            }
+            .footer-help-list-account-list {
+              @include flex_center(column, start);
+              & > * {
+                @include typography(#3d3d3d, 14px, 400, 30px);
+              }
+            }
+          }
+
+          .footer-help-list-help {
+            .footer-help-list-help-title {
+              margin-bottom: 8px;
+              @include typography(#3d3d3d, 18px, 700, 16px);
+            }
+            .footer-help-list-help-list {
+              @include flex_center(column, start);
+              & > * {
+                @include typography(#3d3d3d, 14px, 400, 30px);
+              }
+            }
+          }
+
+          .footer-help-list-categories {
+            .footer-help-list-categories-title {
+              margin-bottom: 8px;
+              @include typography(#3d3d3d, 18px, 700, 16px);
+            }
+            .footer-help-list-categories-list {
+              @include flex_center(column, start);
+              & > * {
+                @include typography(#3d3d3d, 14px, 400, 30px);
+              }
+            }
+          }
+        }
+
+        .footer-help-money {
+          @include flex_center(column, start);
+
+          gap: 33px;
+          .footer-help-money-media {
+            @include flex_center(column, start);
+
+            gap: 20px;
+            .footer-help-money-media-title {
+              @include typography(#3d3d3d, 18px, 700, 16px);
+            }
+            .footer-help-money-media-list {
+              @include flex_center(row, start);
+              gap: 10px;
+            }
+          }
+
+          .footer-help-money-payment {
+            @include flex_center(column, start);
+
+            gap: 13px;
+            .footer-help-money-payment-title {
+              @include typography(#3d3d3d, 18px, 700, 16px);
+            }
+          }
+        }
+      }
+    }
   }
 }

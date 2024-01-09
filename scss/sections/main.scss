@@ -1,42 +1,50 @@
 @import "../mixins.scss";
 
 .main {
-  .main-wrapper {
+  .wrapper {
     max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    .main-selector {
-      display: flex;
-      flex-direction: column;
-      padding: 18px;
-      .main-selector-select {
-        display: flex;
-        flex-direction: column;
-        .main-selector-select-categories {
-          .main-selector-select-categories-select {
-            .main-selector-select-categories-select-el {
-              display: flex;
-              justify-content: space-between;
+    .main-wrapper {
+      @include flex_center(row, center);
+      gap: 50px;
+      .main-selector {
+        @include flex_center(column, center);
+        .main-selector-select {
+          @include flex_center(column, start);
+          padding: 18px;
+          background: #fbfbfb;
+          .main-selector-select-categories {
+            .main-selector-select-categories-select {
+              .main-selector-select-categories-select-el {
+                display: flex;
+                justify-content: space-between;
+              }
             }
           }
         }
+        .main-selector-sale {
+          padding: 18px 22px;
+          background: linear-gradient(
+            180deg,
+            rgba(70, 163, 88, 0.1) 0%,
+            rgba(70, 163, 88, 0.03) 100%
+          );
+        }
       }
-    }
-    .main-plants {
-      .main-plants-goods {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        .main-plants-goods-card {
-          display: flex;
-          flex-direction: column;
-          max-width: 258px;
-          .main-plants-goods-card-desc-title {
-            @include typography(#3d3d3d, 16px, 400, 16px);
-          }
-          .main-plants-goods-card-desc-price {
-            @include typography(#46a358, 18px, 700, 16px);
+      .main-plants {
+        .main-plants-goods {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          .main-plants-goods-card {
+            display: flex;
+            flex-direction: column;
+            max-width: 258px;
+            .main-plants-goods-card-desc-title {
+              @include typography(#3d3d3d, 16px, 400, 16px);
+            }
+            .main-plants-goods-card-desc-price {
+              @include typography(#46a358, 18px, 700, 16px);
+            }
           }
         }
       }
