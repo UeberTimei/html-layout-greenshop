@@ -1009,6 +1009,7 @@ html {
 
 .main .wrapper {
   max-width: 1200px;
+  margin-bottom: 146px;
 }
 .main .wrapper .main-wrapper {
   display: flex;
@@ -1039,17 +1040,77 @@ html {
   padding: 18px 22px;
   background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
 }
+.main .wrapper .main-wrapper .main-plants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: _;
+  gap: 38px;
+}
 .main .wrapper .main-wrapper .main-plants .main-plants-goods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 33px;
 }
 .main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   max-width: 258px;
 }
-.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc-title {
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb {
+  width: 258px;
+  height: 300px;
+  background: #fbfbfb;
+  box-sizing: border-box;
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb .main-plants-goods-card-img {
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb .main-plants-goods-card-thumb-icons {
+  display: none;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb:hover .main-plants-goods-card-thumb-line {
+  position: absolute;
+  top: 0;
+  background: #46a358;
+  width: 258px;
+  height: 1px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb:hover .main-plants-goods-card-thumb-icons {
+  position: absolute;
+  bottom: 0;
+  left: 21%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb:hover .main-plants-goods-card-thumb-icons .main-plants-goods-card-thumb-icons-thumb {
+  background: none;
+  border: none;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-thumb:hover .main-plants-goods-card-thumb-icons .main-plants-goods-card-thumb-icons-thumb .main-plants-goods-card-thumb-icons-img:hover {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(52%) saturate(441%) hue-rotate(80deg) brightness(98%) contrast(96%);
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 6px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc .main-plants-goods-card-desc-title {
   color: #3d3d3d;
   font-family: PT Sans;
   font-size: 16px;
@@ -1057,7 +1118,7 @@ html {
   font-weight: 400;
   line-height: 16px;
 }
-.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc-price {
+.main .wrapper .main-wrapper .main-plants .main-plants-goods .main-plants-goods-card .main-plants-goods-card-desc .main-plants-goods-card-desc-price {
   color: #46a358;
   font-family: PT Sans;
   font-size: 18px;
@@ -1065,11 +1126,68 @@ html {
   font-weight: 700;
   line-height: 16px;
 }
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants .main-plants-sorting-choice {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  background: 0;
+  border: 0;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants .main-plants-sorting-choice:hover, .main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants .main-plants-sorting-choice:active {
+  color: #46a358;
+  font-weight: 700;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants .main-plants-sorting-choice:hover::before, .main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-plants .main-plants-sorting-choice:active::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #46a358;
+  position: relative;
+  top: 25px;
+  max-width: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-sort .main-plants-sorting-sort-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.main .wrapper .main-wrapper .main-plants .main-plants-sorting .main-plants-sorting-sort .main-plants-sorting-sort-select {
+  background: none;
+  border: none;
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 
 .welcome {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 46px;
 }
 .welcome .welcome-wrapper {
   max-width: 1200px;
