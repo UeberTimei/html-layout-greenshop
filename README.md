@@ -19,6 +19,7 @@ HTML Layout GreenShop is layout of [this](<https://www.figma.com/file/BeJ7F91dnI
 2. If you downloaded the ZIP file, then unarchive it.
 3. Go to the folder with layout and write in console `npm install`.
 4. Then write `gulp` in the console. **Or** if you won't change any scss files use **Live Server** to run layout in the browser.
+
    ![Live Server](./image.png)
 
 ## License
