@@ -131,7 +131,7 @@
                   Categories
                 </span>
                 <ul class="main-selector-select-categories-select">
-                  <li class="main-selector-select-categories-select-el">
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -142,8 +142,8 @@
                     >
                       (33)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -154,8 +154,8 @@
                     >
                       (12)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -166,8 +166,8 @@
                     >
                       (65)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -178,8 +178,8 @@
                     >
                       (39)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -190,8 +190,8 @@
                     >
                       (23)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -202,8 +202,8 @@
                     >
                       (17)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -214,8 +214,8 @@
                     >
                       (19)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -226,8 +226,8 @@
                     >
                       (13)
                     </span>
-                  </li>
-                  <li class="main-selector-select-categories-select-el">
+                  </button>
+                  <button class="main-selector-select-categories-select-el">
                     <span
                       class="main-selector-select-categories-select-el-text"
                     >
@@ -238,25 +238,43 @@
                     >
                       (18)
                     </span>
-                  </li>
+                  </button>
                 </ul>
               </div>
               <div class="main-selector-select-price-range">
                 <span class="main-selector-select-price-range-title">
                   Price Range
                 </span>
-                <div class="main-selector-select-price-range-inputs"></div>
-                <div class="main-selector-select-price-range-price"></div>
-                <button class="main-selector-select-price-range-button">
-                  <span class="main-selector-select-price-range-button-text">
-                    Filter
-                  </span>
-                </button>
+                <div class="main-selector-select-price-range-rest">
+                  <div class="main-selector-select-price-range-inputs">
+                    <input
+                      class="main-selector-select-price-range-input-one"
+                      type="range"
+                      name="price"
+                      id="price"
+                    />
+                  </div>
+                  <div class="main-selector-select-price-range-price">
+                    <span class="main-selector-select-price-range-price-title">
+                      Price:
+                      <span
+                        class="main-selector-select-price-range-price-money"
+                      >
+                        $39 - $1230
+                      </span>
+                    </span>
+                  </div>
+                  <button class="main-selector-select-price-range-button">
+                    <span class="main-selector-select-price-range-button-text">
+                      Filter
+                    </span>
+                  </button>
+                </div>
               </div>
               <div class="main-selector-select-size">
                 <span class="main-selector-select-size-title"> Size </span>
                 <ul class="main-selector-select-size-select">
-                  <li class="main-selector-select-size-select-category">
+                  <button class="main-selector-select-size-select-category">
                     <span
                       class="main-selector-select-size-select-category-text"
                     >
@@ -267,8 +285,8 @@
                     >
                       (119)
                     </span>
-                  </li>
-                  <li class="main-selector-select-size-select-category">
+                  </button>
+                  <button class="main-selector-select-size-select-category">
                     <span
                       class="main-selector-select-size-select-category-text"
                     >
@@ -279,8 +297,8 @@
                     >
                       (86)
                     </span>
-                  </li>
-                  <li class="Large">
+                  </button>
+                  <button class="main-selector-select-size-select-category">
                     <span
                       class="main-selector-select-size-select-category-text"
                     >
@@ -291,12 +309,18 @@
                     >
                       (78)
                     </span>
-                  </li>
+                  </button>
                 </ul>
               </div>
             </div>
             <div class="main-selector-sale">
-              <img src="" alt="super sale" class="main-selector-sale-img" />
+              <span class="main-selector-sale-title">Super Sale</span>
+              <span class="main-selector-sale-discount">UP TO 75% OFF</span>
+              <img
+                src="./assets/png/main/select/image_1.png"
+                alt="super sale"
+                class="main-selector-sale-img"
+              />
             </div>
           </aside>
           <div class="main-plants">

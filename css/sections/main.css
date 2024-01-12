@@ -1,3 +1,4 @@
+@import url("../../assets/fonts/Hanging_Letters.ttf");
 .main .wrapper {
   max-width: 1200px;
   margin-bottom: 146px;
@@ -6,7 +7,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 50px;
 }
 .main .wrapper .main-wrapper .main-selector {
@@ -20,16 +21,208 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 18px;
+  gap: 36px;
+  padding: 14px 18px;
   background: #fbfbfb;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 310px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 .main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: _;
+  padding-left: 12px;
+  width: 256px;
   justify-content: space-between;
+  background: none;
+  border: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el:hover, .main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el:focus {
+  cursor: default;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el:hover > *, .main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el:focus > * {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-categories .main-selector-select-categories-select .main-selector-select-categories-select-el > * {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  user-select: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 12px;
+  gap: 15px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest .main-selector-select-price-range-inputs .main-selector-select-price-range-input-one::-webkit-slider-thumb {
+  background-color: #46a358;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest .main-selector-select-price-range-price .main-selector-select-price-range-price-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest .main-selector-select-price-range-price .main-selector-select-price-range-price-title .main-selector-select-price-range-price-money {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest .main-selector-select-price-range-button {
+  display: flex;
+  padding: 8px 26px;
+  border-radius: 6px;
+  border: none;
+  background: #46a358;
+  border-radius: 6px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-price-range .main-selector-select-price-range-rest .main-selector-select-price-range-button .main-selector-select-price-range-button-text {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-title {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: _;
+  padding-left: 12px;
+  width: 256px;
+  justify-content: space-between;
+  background: none;
+  border: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category:hover, .main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category:focus {
+  cursor: default;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category:hover > *, .main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category:focus > * {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-select .main-selector-select-size .main-selector-select-size-select .main-selector-select-size-select-category > * {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
 .main .wrapper .main-wrapper .main-selector .main-selector-sale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 18px 22px;
+  max-width: 310px;
   background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
+  cursor: pointer;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-sale .main-selector-sale-title {
+  color: #46a358;
+  font-family: PT Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  font-family: "Hanging Letters";
+  margin-bottom: 11px;
+  user-select: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-sale .main-selector-sale-discount {
+  color: #3d3d3d;
+  font-family: PT Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  user-select: none;
+}
+.main .wrapper .main-wrapper .main-selector .main-selector-sale .main-selector-sale-img {
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 .main .wrapper .main-wrapper .main-plants {
   display: flex;

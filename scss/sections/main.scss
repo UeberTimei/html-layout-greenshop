@@ -1,34 +1,153 @@
 @import "../mixins.scss";
+@import url("../../assets/fonts/Hanging_Letters.ttf");
 
 .main {
   .wrapper {
     max-width: 1200px;
     margin-bottom: 146px;
     .main-wrapper {
-      @include flex_center(row, center);
+      @include flex_center(row, start);
       gap: 50px;
       .main-selector {
         @include flex_center(column, center);
         .main-selector-select {
           @include flex_center(column, start);
-          padding: 18px;
+          gap: 36px;
+          padding: 14px 18px;
           background: #fbfbfb;
           .main-selector-select-categories {
+            @include flex_center(column, start);
+
+            width: 310px;
+            .main-selector-select-categories-title {
+              @include typography(#3d3d3d, 18px, 700, 16px);
+              margin-bottom: 10px;
+              user-select: none;
+            }
             .main-selector-select-categories-select {
+              @include flex_center(column, start);
+              // gap: 10px;
               .main-selector-select-categories-select-el {
-                display: flex;
+                @include flex_center(row, _);
+                padding-left: 12px;
+                width: 256px;
                 justify-content: space-between;
+                background: none;
+                border: none;
+                &:hover,
+                &:focus {
+                  cursor: default;
+                  & > * {
+                    @include typography(#46a358, 15px, 700, 40px);
+                  }
+                }
+
+                & > * {
+                  @include typography(#3d3d3d, 15px, 400, 40px);
+                  user-select: none;
+                }
+              }
+            }
+          }
+
+          .main-selector-select-price-range {
+            @include flex_center(column, start);
+            .main-selector-select-price-range-title {
+              @include typography(#3d3d3d, 18px, 700, 16px);
+              margin-bottom: 20px;
+              user-select: none;
+            }
+            .main-selector-select-price-range-rest {
+              @include flex_center(column, start);
+
+              margin-left: 12px;
+              gap: 15px;
+              .main-selector-select-price-range-inputs {
+                .main-selector-select-price-range-input-one {
+                  &::-webkit-slider-thumb {
+                    background-color: #46a358;
+                  }
+                }
+              }
+              .main-selector-select-price-range-price {
+                .main-selector-select-price-range-price-title {
+                  @include typography(#3d3d3d, 16px, 400, 16px);
+                  .main-selector-select-price-range-price-money {
+                    @include typography(#46a358, 16px, 700, 16px);
+                  }
+                }
+              }
+              .main-selector-select-price-range-button {
+                display: flex;
+                padding: 8px 26px;
+                border-radius: 6px;
+                border: none;
+                background: #46a358;
+                border-radius: 6px;
+                .main-selector-select-price-range-button-text {
+                  @include typography(#fff, 16px, 700, 20px);
+                }
+              }
+            }
+          }
+
+          .main-selector-select-size {
+            @include flex_center(column, start);
+
+            .main-selector-select-size-title {
+              @include typography(#3d3d3d, 18px, 700, 16px);
+              margin-bottom: 8px;
+            }
+            .main-selector-select-size-select {
+              @include flex_center(column, start);
+              .main-selector-select-size-select-category {
+                @include flex_center(row, _);
+                padding-left: 12px;
+                width: 256px;
+                justify-content: space-between;
+                background: none;
+                border: none;
+                &:hover,
+                &:focus {
+                  cursor: default;
+                  & > * {
+                    @include typography(#46a358, 15px, 700, 40px);
+                  }
+                }
+
+                & > * {
+                  @include typography(#3d3d3d, 15px, 400, 40px);
+                }
               }
             }
           }
         }
         .main-selector-sale {
+          @include flex_center(column, center);
+
+          position: relative;
           padding: 18px 22px;
+          max-width: 310px;
           background: linear-gradient(
             180deg,
             rgba(70, 163, 88, 0.1) 0%,
             rgba(70, 163, 88, 0.03) 100%
           );
+          cursor: pointer;
+          .main-selector-sale-title {
+            @include typography(#46a358, 65px, 400, 65px);
+            font-family: "Hanging Letters";
+            margin-bottom: 11px;
+            user-select: none;
+          }
+          .main-selector-sale-discount {
+            @include typography(#3d3d3d, 23px, 700, 16px);
+            user-select: none;
+          }
+          .main-selector-sale-img {
+            object-fit: cover;
+            mix-blend-mode: multiply;
+          }
         }
       }
       .main-plants {

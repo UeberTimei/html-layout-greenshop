@@ -5,6 +5,7 @@
   font-style: normal;
   font-weight: $weight;
   line-height: $height;
+  // user-select: none;
 }
 
 @mixin flex_center($direction, $align) {
